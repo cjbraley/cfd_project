@@ -1,4 +1,4 @@
-# Description
+## Description
 
 This project processes Computational Fluid Dynamics (CFD) simulations for aircraft.
 
@@ -6,7 +6,7 @@ The aim is to create a production-grade data pipeline along with visualizations 
 
 The project is fully containerized, and the code is designed to be portable to a real environment.
 
-# Architecture
+## Architecture
 
 Incoming data is parsed and processed in batch by Apache Spark into our cloud storage (Minio), where it is stored in Apache Iceberg format. From here, it is queryable by Trino, which serves the visualizations.
 
@@ -35,9 +35,9 @@ The data lake is built using Minio and simulates an S3 bucket. Data is stored in
 
 Iceberg allows us to enforce ACID transactions, use Time Travel, use Schema Evolution, and access Optimizations based on Metadata (e.g., data skipping).
 
-#### Visualization & Analysis
+## Visualization & Analysis
 
-# Dashboard
+#### Dashboard
 
 A sample Tableau dashboard demonstrates the analysis capabilities of this project. The dashboard is not included in this repository.
 
@@ -45,7 +45,7 @@ A sample Tableau dashboard demonstrates the analysis capabilities of this projec
 
 ![Sample Dashboard](demo/cfd_dashboard.png)
 
-# Analysis
+#### Analysis
 
 Our analysis is focused on how the shape and design of aircraft affect the amount of lift, drag and upward pressure they are able to create, given a constant speed.
 
@@ -59,21 +59,21 @@ Our analysis is focused on how the shape and design of aircraft affect the amoun
 
 **lift-to-drag ratio**: The ratio of generated lift to drag. Quantifies the aircraft's aerodynamic efficiency. A higher lift-to-drag ratio indicates improved fuel efficiency and overall performance.
 
-##### Insights
+#### Insights
 
 1. **The optimum aircraft is Design B, Shape 3**: This version is able to produce the highest amount of lift with the smallest amount of drag.
 2. **Improved metrics over time:** As time progresses all metrics are improving, indicating that optimizations are being made either to the aircraft itself or to the conditions in which the simulations are occurring
 
 ## Setup
 
-## Prerequisites
+#### Prerequisites
 
 * **Docker and Docker Compose:** Must be installed and configured locally.
 * **Python 3.x:** Must be installed and configured locally.
 * **Spark:** Must be installed and configured locally to run tests.
 * **Make:** Must be installed.
 
-# Initial Setup
+#### Initial Setup
 
 1.  **Clone the repository:**
 
