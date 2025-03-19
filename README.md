@@ -78,7 +78,7 @@ Our analysis is focused on how the shape and design of aircraft affect the amoun
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/cjbraley/cfd_project.git](https://github.com/cjbraley/cfd_project.git)
+    git clone https://github.com/cjbraley/cfd_project.git
     cd cfd_project
     ```
 
