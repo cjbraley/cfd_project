@@ -19,15 +19,11 @@ Incoming data is parsed and processed in batch by Apache Spark into our cloud st
 
 **Current State**
 
-<p align="center">
-  <img src="https://github.com/cjbraley/cfd_project/raw/master/demo/architecture_tmp.png?raw=true" alt="Current Architecture"/>
-</p>
+![Current Architecture](demo/architecture_tmp.png)
 
 **Target State**
 
-<p align="center">
-  <img src="https://github.com/cjbraley/cfd_project/raw/master/demo/architecture.png?raw=true" alt="Target Architecture"/>
-</p>
+![Target Architecture](demo/architecture.png)
 
 #### Pipeline
 
@@ -47,9 +43,7 @@ A sample Tableau dashboard demonstrates the analysis capabilities of this projec
 
 <a href="https://public.tableau.com/app/profile/c.braley/viz/CFD_Aircraft_Analysis/Dashboard1">Link to Dashboard</a>
 
-<p align="center">
-  <img src="https://github.com/cjbraley/cfd_project/raw/master/demo/cfd_dashboard.png?raw=true" alt="CFD Sample Dashboard"/>
-</p>
+![Sample Dashboard](demo/cfd_dashboard.png)
 
 # Analysis
 
