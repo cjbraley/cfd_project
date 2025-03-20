@@ -1,4 +1,5 @@
 import csv
+import os
 from trino.dbapi import connect
 
 """
@@ -15,6 +16,8 @@ output_file = f"./extract/{table}.csv"
 query = f"""
     SELECT * FROM {catalog}.{schema}.{table}
 """
+
+os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
 with connect(
     host=host, 
